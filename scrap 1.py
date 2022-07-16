@@ -17,5 +17,5 @@ with open('QTI-test.csv', 'w', encoding='utf8', newline='')as file:
     for p in populer:
         Title = p.find('h2',class_='most__title').get_text()
         res = [Title]
-        # print (hasil)
+        # print (res)
         write.writerow(res)
